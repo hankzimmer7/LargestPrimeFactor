@@ -3,14 +3,14 @@ package com.hankzimmer;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Largest prime factor of 21: " + getLargestPrime(21));
-        System.out.println("Largest prime factor of 217: " + getLargestPrime(217));
-        System.out.println("Largest prime factor of 0: " + getLargestPrime(0));
-        System.out.println("Largest prime factor of 45: " + getLargestPrime(45));
-        System.out.println("Largest prime factor of -1: " + getLargestPrime(-1));
+        System.out.println("Largest prime factor of 21: " + getLargestPrimeFactor(21));
+        System.out.println("Largest prime factor of 217: " + getLargestPrimeFactor(217));
+        System.out.println("Largest prime factor of 0: " + getLargestPrimeFactor(0));
+        System.out.println("Largest prime factor of 45: " + getLargestPrimeFactor(45));
+        System.out.println("Largest prime factor of -1: " + getLargestPrimeFactor(-1));
     }
 
-    public static int LargestPrimeFactor(int number) {
+    public static int getLargestPrimeFactor(int number) {
         //return -1 if the number does not have primes or is negative
         if (number < 2) {
             return -1;
